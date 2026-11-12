@@ -1,0 +1,9 @@
+{
+	"id": "math-pick",
+	"name": "Math Pick",
+	"version": "0.1.0",
+	"minAppVersion": "1.4.0",
+	"description": "Option+click a LaTeX term (or a rendered equation) to insert it at the cursor, like Math-o-mir.",
+	"author": "Roy Kisluk",
+	"isDesktopOnly": true
+}

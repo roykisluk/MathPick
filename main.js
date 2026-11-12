@@ -140,7 +140,7 @@ class MathPick extends Plugin {
   down(e) {
     if (!e.altKey || e.button !== 0) return;
     const cmEl = e.target.closest && e.target.closest(".cm-editor");
-    if (!cmEl) return;                                  // Reading mode etc.
+    if (!cmEl || e.target.closest(".cm-tooltip")) return; // Reading mode; Latex Suite's math-preview popup
     const view = EditorView.findFromDOM(cmEl);
     const md = this.app.workspace.getActiveViewOfType(MarkdownView);
     if (!view || !md) return;

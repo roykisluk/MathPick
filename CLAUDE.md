@@ -23,7 +23,8 @@ function-call args) are recursed into, so clicking a bracket gives the whole gro
 ## Lesson log
 - 2026-11-12 — Built. No existing plugin among the 10,269 in obsidian-releases does click-to-insert
   (searched descriptions for latex/mathjax + click/insert/copy/macro). Parser tested (node test.js + a sweep over
-  every position of "Two-sector model notes.md": 87 blocks, 7645 clicks, no crash). **In-app event handling
-  (capture-phase mousedown/mouseup/click on window, posAtDOM for rendered widgets) is NOT yet verified in Obsidian.**
+  every position of "Two-sector model notes.md": 87 blocks, 7645 clicks, no crash).
 - 2026-11-12 — Design choice: clicking inside a function argument (`S_T(\underline{R_T})`) picks the argument,
   not the whole call; click the symbol or the `(` to get the whole call.
+- 2026-11-12 — Roy verified in Obsidian: Option+click rendered equation, Option+click raw term, Option+drag,
+  cursor stays put — all work. Repo: github.com/roykisluk/MathPick (private).
